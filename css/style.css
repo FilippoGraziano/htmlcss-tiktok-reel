@@ -21,6 +21,10 @@ video {
 	object-fit: cover;
 }
 
+i{
+	font-size: 25px;
+}
+
 .reel-page {
 	height: 100vh; /* ti incuriosisce? */
 	max-width: 512px;
@@ -75,13 +79,38 @@ da rimuovere una volta concluso
 
 .debug .sidebar {
 	min-width: 80px;
-	min-height: 450px;
+	min-height: 435px;
 	border: 2px dashed #ff0;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.debug .reel-header {
+.navbar{
 	min-height: 50px;
-	border: 2px dashed #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-link{
+	text-decoration: none;
+	color: #ffffff7a;
+	margin-right: 10px;
+}
+
+.nav-elements > a:last-child{
+	color: white;
+	display: inline-block;
+}
+
+.underline{
+	border-bottom: 3px solid white;
+	width: 20px;
+	height: 5px;
+	position: relative;
+	left: 10px;
 }
 
 /* --------------------- */
