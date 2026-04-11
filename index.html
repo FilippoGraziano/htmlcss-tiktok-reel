@@ -32,9 +32,11 @@
     <header class="reel-header">
       <div class="navbar">
         <i class="bi bi-play-btn"></i>
-        <div class="nav-elements">
+        <div class="nav-text">
           <a href="#" class="navigation-link">Esplora</a>
-          <a href="#" class="navigation-link">Seguiti</a>
+          <a href="#" class="navigation-link relative">Seguiti
+            <div class="new-messages"></div>
+          </a>
           <a href="#" class="navigation-link">Per te <div class="underline"></div></a>
         </div>
         <i class="bi bi-search"></i>
@@ -59,27 +61,38 @@
 
     <!-- Footer -->
     <footer>
-      <section>
+      <section class="video-information">
         <h4>boolean.careers</h4>
         <p>Prova il Fundamentals Camp. 20 ore di corso <br>
         gratuito per...</p>
-        <button>Vedi altro</button>
+        <button class="button-show-text"><b>Vedi altro</b></button>
       </section>
 
-      <section>
-        <div>
-          <i class="bi bi-house-fill"></i>
-          Home
-          <i class="bi bi-people"></i>
-          Amici
-          <!-- todo: plus button -->
-          <i class="bi bi-chat-square"></i>
-          Posta in arrivo
-          <i class="bi bi-person"></i>
-          Profilo
-        </div>
-      </section>
-    </footer>
+      <section class="navbar-footer">
+          <i class="bi bi-house-fill">
+            <br>
+            <span class="label">Home</span>
+          </i>
+
+          <i class="bi bi-people">
+            <br>
+            <span class="label">Amici</span>
+          </i>
+
+          <a href="#"><i class="bi bi-plus"></i></a>
+
+          <i class="bi bi-chat-square relative">
+            <br>
+            <span class="label">Posta in arrivo</span>
+            <div class="message-number">19</div>
+          </i>
+
+          <i class="bi bi-person">
+            <br>
+            <span class="label">Profilo</span>
+          </i>
+        </section>
+      </footer>
   </div>
 
 </body>
