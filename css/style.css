@@ -82,11 +82,11 @@ p{
 
 /* footer */
 
-.navbar-footer > i:first-child{
+.navbar-footer > a:first-child{
 	color: white;
 }
 
-.navbar-footer > i{
+.navbar-footer  i:not(.bi-plus){
 	font-size: 20px;
 	line-height: 20px;
 }
@@ -108,17 +108,16 @@ p{
 	align-items: center;
 }
 
-.bi-house-fill, .bi-people,
-.bi-chat-square, .bi-person{
+.navbar-footer a{
 	text-align: center;
 	color: #ffffff7a;
+	text-decoration: none;
 }
 
-.navbar-footer a{
+.navbar-footer a:nth-child(3){
 	display: flex;
     justify-content: center;
     align-items: center;
-	text-decoration: none;
 	color: black;
 	background-color: white;
 	padding: 5px 20px;
@@ -129,7 +128,7 @@ p{
 	height: 30px;
 }
 
-.navbar-footer > a > i{
+.navbar-footer .bi-plus{
 	font-size: 30px;
 }
 
