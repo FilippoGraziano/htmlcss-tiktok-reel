@@ -43,31 +43,6 @@ img{
 	position: relative;
 }
 
-.reel-header {
-	position: absolute;
-	align-items: center;
-	justify-content: space-between;
-	top: 0;
-	left: 0;
-	right: 0;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
-
-/* Footer */
-
-footer {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color: #fff;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
-
 h4{
 	margin-bottom: 10px;
 }
@@ -81,119 +56,22 @@ p{
 	display: inline;
 }
 
-/* footer */
-
-.navbar-footer > a:first-child{
-	color: white;
-}
-
-.navbar-footer  i:not(.bi-plus){
-	font-size: 20px;
-	line-height: 20px;
-}
-
-.button-show-text{
-	display: inline;
+button{
 	border: 0;
 	background-color: transparent;
 	color: white;
-	font-size: 16px;
-    cursor: pointer;
 }
 
-.navbar-footer{
-	background-color: black;
-	padding: 15px 0;
-	display: flex;
-    justify-content: space-around;
+/* header */
+
+.reel-header {
+	position: absolute;
 	align-items: center;
-}
-
-.navbar-footer a{
-	text-align: center;
-	color: #ffffff7a;
-	text-decoration: none;
-}
-
-.navbar-footer a:nth-child(3){
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	color: black;
-	background-color: white;
-	padding: 5px 20px;
-	border-radius: 20%;
-	border-right: 3.5px solid #ff00ff;
-	border-left: 3.5px solid #00ffff;
-	width: 50px;
-	height: 30px;
-}
-
-.navbar-footer .bi-plus{
-	font-size: 30px;
-}
-
-.label{
-    font-style: normal;
-    font-size: 12px;
-}
-
-.message-number{
-	background-color: #f93050;
-	border-radius: 10px;
-	color: white;
-	font-style: normal;
-    font-size: 9px;
-	line-height: 8px;
-    padding: 1px 2px;
-	position: absolute;
-    top: 0;
-    right: 0;
-    translate: -160% -30%;
-}
-
-/* Sidebar */
-
-.sidebar {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-	padding: 0 16px;
-	position: absolute;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
 	right: 0;
-	top: 30%;
 }
-
-.bi-heart-fill, .bi-chat-dots-fill, 
-.bi-bookmark-fill, .bi-sign-turn-slight-right-fill{
-	margin-top: 20px;
-}
-
-.bi-heart-fill{
-	margin-top: 30px;
-}
-
-#follow-button{
-	background-color: #f93050;
-    color: white;
-    padding: 5px;
-    border: 0px;
-    border-radius: 50%;
-	width: 25px;
-    height: 25px;
-	font-size: 20px;
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    translate: 50% 30%;
-}
-
-span{
-	position: relative;
-    bottom: 20%;
-}
-
-/* navbar header */
 
 .navbar{
 	min-height: 50px;
@@ -228,9 +106,133 @@ span{
 	background-color: #f93050;
 	border-radius: 50%;
 	position: absolute;
-    right: 0;
-    top: 0;
-    translate: 20% -50%;
+	right: 0;
+	top: 0;
+	translate: 20% -50%;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 0 16px;
+	position: absolute;
+	right: 0;
+	top: 30%;
+}
+
+.sidebar > button{
+	margin-top: 20px;
+}
+
+.sidebar > button:nth-child(2){
+	margin-top: 30px;
+}
+
+.sidebar  i > span{
+	display: block;
+	font-style: normal;
+    font-size: 16px;
+}
+
+#follow-button{
+	background-color: #f93050;
+    color: white;
+    padding: 5px;
+    border: 0px;
+    border-radius: 50%;
+	width: 25px;
+    height: 25px;
+	font-size: 20px;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    translate: 50% 30%;
+}
+
+span{
+	position: relative;
+    bottom: 20%;
+}
+
+/* footer */
+
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.navbar-footer > a:first-child{
+	color: white;
+}
+
+.navbar-footer  i:not(.bi-plus){
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.button-show-text{
+	display: inline;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+/* navbar footer */
+
+.navbar-footer{
+	background-color: black;
+	padding: 15px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar-footer a{
+	text-align: center;
+	color: #ffffff7a;
+	text-decoration: none;
+}
+
+.navbar-footer a:nth-child(3){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: white;
+	padding: 5px 20px;
+	border-radius: 20%;
+	border-right: 3.5px solid #ff00ff;
+	border-left: 3.5px solid #00ffff;
+	width: 50px;
+	height: 30px;
+}
+
+.navbar-footer .bi-plus{
+	font-size: 30px;
+}
+
+.label{
+	font-style: normal;
+	font-size: 12px;
+}
+
+.message-number{
+	background-color: #f93050;
+	border-radius: 10px;
+	color: white;
+	font-style: normal;
+	font-size: 9px;
+	line-height: 8px;
+	padding: 1px 2px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	translate: -160% -30%;
 }
 
 /* --------------------- */
